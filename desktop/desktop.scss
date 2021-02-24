@@ -1,0 +1,179 @@
+@import 'variables';
+
+// Topic list
+// *------------------------------------------------*
+.topic-list {
+  td {
+    padding-bottom: 10px;
+    font-size: 0.8em;
+  }
+  td,
+  .creator a,
+  .editor a {
+    color: $color-gray;
+  }
+  .reply-comment {
+    padding-right: 4px;
+    font-size: initial;
+  }
+  .creator, .editor {
+    font-size: 13px;
+    display: block;
+    margin-top: 3px;
+  }
+  .topic-list-item .discourse-tags {
+    margin-right: $margin-6;
+  }
+  .creator-username {
+    margin-right: $margin-6;
+  }
+  .poster-info {
+    width: 70%;
+    float: left;
+    text-align: right;
+  }
+  .badge-wrapper.bullet {
+    margin-right: $margin-6;
+  }
+}
+span.relative-date {
+  color: $color-gray;
+  font-size: initial;
+}
+
+// Topic Page
+// *------------------------------------------------*
+.topic-map, #topic-footer-buttons {
+  display: none;
+}
+
+.timeline-container .topic-timeline .timeline-footer-controls {
+  display: none;
+}
+
+// Composer
+// *------------------------------------------------*
+.d-editor-button-bar, .composer-popup, .d-editor-preview-wrapper, a.toggle-preview {
+  display: none;
+}
+
+#reply-control {
+  max-width: 1275px;
+}
+
+#reply-control .title-and-category.with-preview {
+  width: 100%;
+}
+
+.select-kit .category-row {
+  max-width: none;
+}
+
+#reply-control .save-or-cancel {
+  flex-basis: 100%
+}
+
+// Buttons
+// *------------------------------------------------*
+#create-topic {
+  border-radius: $radius-4;
+  background-color: $tertiary;
+  border: 1px solid $tertiary;
+  color: $color-white;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $tertiary-hover;
+    color: $color-white;
+    border-radius: $radius-4;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+// Dropdowns
+// *------------------------------------------------*
+.menu-panel {
+  border: 1px solid $tertiary;
+  border-radius: $radius-4;
+  .panel-body-bottom .btn:hover {
+    background: $tertiary;
+  }
+  li a.widget-link .d-icon, .menu-panel li a.categories-link .d-icon {
+    color: $tertiary;
+  }
+}
+
+div.menu-links-header .menu-links-row li a.active .d-icon {
+  color: $tertiary;
+}
+
+// Navigation Bar
+// *------------------------------------------------*
+.nav-pills>li>a {
+  font-size: inherit;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 2px solid transparent;
+  color: $color-black;
+  margin: 0 4px;
+  &:hover {
+    color: $color-black;
+    border-bottom: 2px solid $tertiary-hover;
+    background-color: transparent;
+  }
+}
+
+.nav-pills>li a.active {
+  background-color: transparent;
+  color: $color-black;
+  border-bottom: 2px solid $tertiary;
+  &:hover {
+    border-bottom: 2px solid $tertiary-hover;
+    color: $color-black;
+  }
+}
+
+// Search
+// *------------------------------------------------*
+.search-container .search-advanced {
+  padding: 1em;
+}
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $tertiary;
+    border-radius: 10px 10px 0 0;
+    color: $color-white;
+  }
+  .search-advanced-filters {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  background: $tertiary-low;
+
+  nav:before, nav:after, .controls, .nav-pills {
+    background: $tertiary-low;
+  }
+  .nav-pills>li a.active {
+    background: none;
+    color: $tertiary;
+  }
+}
+
+.discourse-no-touch .admin-controls button:hover,
+ .discourse-no-touch .admin-controls button.btn-hover,
+ .discourse-no-touch .admin-controls label.btn:hover,
+ .discourse-no-touch .admin-controls label.btn.btn-hover {
+  background: $tertiary-hover;
+  color: $color-white;
+}
+
+.nav-stacked a.active {
+  background-color: $tertiary;
+}
