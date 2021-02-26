@@ -58,19 +58,17 @@ span.relative-date {
 }
 
 #reply-control {
-  max-width: 1275px;
-}
-
-#reply-control .title-and-category.with-preview {
-  width: 100%;
+  max-width: 740px;
+  .title-and-category.with-preview {
+    width: 100%;
+  }
+  .save-or-cancel {
+    flex-basis: 100%
+  }
 }
 
 .select-kit .category-row {
   max-width: none;
-}
-
-#reply-control .save-or-cancel {
-  flex-basis: 100%
 }
 
 // Buttons
