@@ -1,4 +1,4 @@
-<script type='text/x-handlebars' data-template-name='topic-list-header.raw'>
+<script type="text/x-handlebars" data-template-name="topic-list-header.raw">
   {{#if bulkSelectEnabled}}
     <th class='star'>
       {{#if canBulkSelect}}
@@ -11,13 +11,13 @@
   {{raw "topic-list-header-column" sortable='true' number='true' order='activity' forceName=(theme-i18n 'activities') }}
 </script>
 
-<script type='text/x-handlebars' data-template-name='list/topic-list-item.raw'>
+<script type="text/x-handlebars" data-template-name="list/topic-list-item.raw">
   {{#if bulkSelectEnabled}}
     <td class='star'>
       <input type='checkbox' class='bulk-select'>
     </td>
   {{/if}}
-  
+
   <td class='main-link clearfix'>
     {{raw "topic-status" topic=topic}}
     {{topic-link topic}}
@@ -28,7 +28,7 @@
     <div class='creator'>
       {{~#if topic.creator ~}}
       <span class='creator-username'>
-        <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a> 
+        <a href="/users/{{topic.creator.username}}" data-auto-route="true" data-user-card="{{topic.creator.username}}">{{topic.creator.username}}</a>
       </span>
     {{~/if ~}}
       {{#if showCategory}}
@@ -54,7 +54,7 @@
   </td>
 </script>
 
-<script>
+<script type="script/discourse-plugin">
   (function(){
     var TopicListItemView = require('discourse/components/topic-list-item').default;
     TopicListItemView.reopen({
